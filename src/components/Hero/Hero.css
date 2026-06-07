@@ -1,0 +1,65 @@
+/* ============================================
+   HERO / CONTACT HEADER
+   ============================================ */
+.hero {
+  padding: 80px 0 48px;
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f3eeff 100%);
+}
+
+.hero__inner {
+  max-width: 780px;
+}
+
+.hero__title {
+  font-size: var(--font-size-5xl);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+  opacity: 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 64px 0 36px;
+  }
+
+  .hero__title {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 0 28px;
+  }
+
+  .hero__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .hero__subtitle {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 1.75rem;
+  }
+}
